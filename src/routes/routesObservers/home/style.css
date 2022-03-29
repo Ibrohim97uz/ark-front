@@ -1,0 +1,61 @@
+.Carousel {
+  position: relative;
+
+  user-select: none;
+}
+
+.Carousel img {
+  height: 846px;
+}
+
+.carousel-item-text-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-item-text-wrapper .carousel-title {
+  font-size: 3rem;
+  /* color: #edf6f9; */
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.carousel-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #e80f33;
+
+  color: #fff;
+  transition: 0.7s ease;
+  margin-top: 30px;
+}
+
+.carousel-button:hover {
+  background-color: #9b0c24;
+  color: #fff;
+}
+
+.carousel-button-dark {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #041e42;
+  border: 3px solid #041e42;
+  color: #fff;
+  transition: 0.7s ease;
+  margin-top: 30px;
+}
+
+.carousel-button-dark:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.dark:hover {
+  color: #041e42;
+}

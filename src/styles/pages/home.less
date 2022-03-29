@@ -1,0 +1,84 @@
+
+.nnb-home-block {
+  position: relative;
+  background: transparent;
+}
+
+@keyframes nnb-effect {
+  from {
+    width: 243px;
+    height: 243px;
+    opacity: 1;
+    @media (min-width: 300px) and (max-width: 700px) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  to {
+    width: 400px;
+    height: 400px;
+    opacity: 0.3;
+    @media (min-width: 300px) and (max-width: 700px) {
+      width: 300px !important;
+      height: 300px !important;
+    }
+  }
+}
+
+
+.nnb-send-resume-bock {
+  border-radius: 50% 50% 0 0;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  right: 0;
+  transform:  translate(52%, 10px) rotate(-90deg);
+
+  &::after, &::before {
+    content: '';
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #db0f31;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0.3;
+    animation: nnb-effect 4s linear infinite;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  &::before {
+    animation-delay: 2.5s;
+  }
+  .nnb-btn-danger{
+    background: #ffffff;
+    border-color: #db0f31;
+    color: #db0f31 !important;
+    cursor: pointer!important;
+    transition: 0.3s all ease;
+    border-radius: 30px;
+    padding: 5px 25px 40px 25px;;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 999999;
+
+  }
+  button[onclick] { cursor: pointer }
+
+
+}
+
+.nnb-play-video{
+  /*
+  position: fixed;
+  */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  height: 100%;
+  object-fit:contain;
+  object-position: left;
+  ;
+
+}

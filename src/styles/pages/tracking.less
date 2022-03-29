@@ -1,0 +1,98 @@
+
+
+
+
+//** helper
+
+
+.tracking{
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .img-block{
+    text-align: right;
+    img{
+      width: 60%;
+    }
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .tracking-block{
+    a {
+      color: inherit;
+
+      &:hover {
+        color: #7f8ff4;
+      }
+    }
+    color: #9c9c9c;
+    //** button
+    .btn {
+      display: inline-block;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      border: 0;
+      outline: 0;
+      padding: 0;
+      transition: all 200ms ease-in;
+      cursor: pointer;
+
+      &--primary {
+        background: rgb(232, 15, 51);
+        color:#fff;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+        border-radius: 2px;
+        padding: 7px 42px;
+
+        &:hover {
+          background: darken(rgb(219, 15, 50), 4%);
+        }
+
+        &:active {
+          background:rgb(219, 15, 50);;
+          box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+        }
+      }
+
+      &--inside {
+        position: absolute;
+        top: 100px;
+        right:0px;
+      }
+    }
+
+    //** form
+    .form {
+      position: relative;
+      &__field {
+        width: 360px;
+        background: #fff;
+        color:#a3a3a3;
+        font: inherit;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0 , .1);
+        border: 0;
+        outline: 0;
+        padding: 22px 18px;
+      }
+      .text-danger{
+        color:rgb(219, 15, 50);
+      }
+      input{
+        color: #000;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      ::placeholder {
+        color: #000;
+        font-weight: normal!important;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
